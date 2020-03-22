@@ -14,6 +14,8 @@
 
 Bert-pytorch里面的实现
 
+![](https://github.com/yihenglu/NLP_Knowledge_Points/blob/master/img/Transformer/LN.jpg?raw=true)
+
 ## 1. Scaled Dot-product Attention
 
 ![](http://ww1.sinaimg.cn/large/006gOeiSly1fyhq0qrab9j30av0apt8w.jpg)
