@@ -38,7 +38,7 @@ SVM 求得的分隔超平面所产生的分类结果是最鲁棒的，对未知�
 ### 5. SVM 与 LR 的区别
 
 - LR是参数模型，SVM为非参数模型。
-- LR采用的损失函数为logisticalloss，而SVM采用的是hingeloss(`???`)。
+- LR采用的损失函数为logisticalloss（和交叉熵的形式一样），而SVM采用的是hingeloss([怎么样理解SVM中的hinge-loss：前两三个回答都可以](https://www.zhihu.com/question/47746939/answer/154058298))。
 - 在学习分类器的时候，SVM只考虑与分类最相关的少数支持向量点。
 - LR的模型相对简单，在进行大规模线性分类时比较方便。
 - 从目标函数来看，区别在于逻辑回归采用的是logistical loss，SVM采用的是hinge loss。这两个损失函数的目的都是增加对分类影响较大的数据点的权重，减少与分类关系较小的数据点的权重。
@@ -79,7 +79,7 @@ SVM 求得的分隔超平面所产生的分类结果是最鲁棒的，对未知�
 如果feature数量很大，跟样本数量差不多，建议使用LR或者 Linear kernel 的SVM。
 如果 feature 数量较少，样本数量一般，建议使用 Gaussian Kernel 的SVM。
 
-### 12. SVM 损失函数是什么(`???`)？
+### 12. SVM 损失函数是什么([怎么样理解SVM中的hinge-loss：前两三个回答都可以](https://www.zhihu.com/question/47746939/answer/154058298))？
 
 $$
 J(\theta) = \frac{1}{2} ||\theta||^2 + C \sum_i max(0, 1-y_i(\theta^Tx_i + b))

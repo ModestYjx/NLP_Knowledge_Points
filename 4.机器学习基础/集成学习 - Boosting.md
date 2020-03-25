@@ -1,4 +1,4 @@
-# 集成学习 - GBDT
+# 集成学习 - Boosting
 
 ---
 
@@ -13,11 +13,7 @@ Boosting 基于串行策略， 各个基分类器之间有依赖。
 3. 基于调整后的样本分布，训练下一个弱学习器、
 4. 测试时，对各基学习器**加权**得到最终结果
 
-## 2. GBDT
 
-GBDT ， Gradient Boosting  Decision Tree， 叫 梯度提升决策树。
-
-### 1. GBDT 思想
 
 
 

@@ -1,6 +1,10 @@
+[toc]
+
 # CRF -- 条件随机场
 
-[NLP —— 图模型（二）条件随机场（Conditional random field，CRF）](https://www.cnblogs.com/Determined22/p/6915730.html)还没看，但感觉写的很好！需要的时候就看
+## 阅读提示
+
+**阅读提示**：先看这些文章！[这一系列文章很好！](https://www.cnblogs.com/baiboy/p/crf2.html)，有深度，而且结合了具体例子再讲，这些看完以后，这个[NLP —— 图模型（二）条件随机场（Conditional random field，CRF）](https://www.cnblogs.com/Determined22/p/6915730.html)作为补充，同时结合自己总结的HMM看，以下为简单的肤浅总结：
 
 ## 1. 关键字
 
