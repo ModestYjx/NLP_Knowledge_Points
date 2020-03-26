@@ -1,18 +1,16 @@
+[toc]
+
 # 集成学习 - GBDT、XGBoost与LightGBM
 
----
+## 阅读提示
 
-## Refrence
+先看《集成学习 - Boosting与Bagging.md》，再看[GBDT算法原理深入解析](https://www.zybuluo.com/yxd/note/611571)，然后看[【机器学习】决策树（下）——XGBoost、LightGBM（非常详细）](https://zhuanlan.zhihu.com/p/87885678)，如果实在看不下去，可以看一下简单的视频[xgboost详解](https://www.bilibili.com/video/av61936066?p=3)。
 
-[1] [xgboost详解](https://www.bilibili.com/video/av61936066?p=3)
 
-[2] [【机器学习】决策树（下）——XGBoost、LightGBM（非常详细）](https://zhuanlan.zhihu.com/p/87885678)
 
 ## GBDT
 
-GBDT ， Gradient Boosting  Decision Tree， 叫 梯度提升决策树。
-
-
+[GBDT算法原理深入解析](https://www.zybuluo.com/yxd/note/611571)
 
 
 
@@ -28,25 +26,25 @@ GBDT ， Gradient Boosting  Decision Tree， 叫 梯度提升决策树。
 
 ![[公式]](https://www.zhihu.com/equation?tex=%5COmega) 为模型的正则项
 
-## 例子
+### 例子
 
 假设目标值为1000，第一课树预测结果为950，那么残差就为50，然后第二棵树根据之前的残差50预测新的结果为985，然后第三棵树，此时看到的是一个前两棵树组成的整体的结果，即985，然后残差为15，于是就进行新的预测结果为990。
 
-## 推导
+### 推导
 
 1. $y_t = y_{t-1}+f_t(x_i)$，其中$y_t$第t轮的模型预测，$f_t(x_i)$表示新加的一个函数
 2. 目标：均方误差+叶子数的惩罚项（防止叶子数过多，而导致的过拟合）+正则项
 
 2. 用泰勒展开来近似原来的目标：
 
-## 难点
+### 难点
 
 （个人总结）
 
 1. 目标函数公式推导
 2. 选取特征的各种策略
 
-## 优缺点
+### 优缺点
 
 **1.3.1 优点**
 
@@ -63,7 +61,7 @@ GBDT ， Gradient Boosting  Decision Tree， 叫 梯度提升决策树。
 1. 虽然利用预排序和近似算法可以降低寻找最佳分裂点的计算量，但在节点分裂过程中仍需要遍历数据集；
 2. 预排序过程的空间复杂度过高，不仅需要存储特征值，还需要存储特征对应样本的梯度统计值的索引，相当于消耗了两倍的内存。
 
-## 使用
+### 使用
 
 pip install xgboost
 

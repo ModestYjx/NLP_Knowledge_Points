@@ -1,8 +1,10 @@
 [toc]
 
-
-
 # HMM(Hidden Markov Model)
+
+## 阅读提示
+
+先看QA，作为预备知识，然后可以看[隐马尔科夫模型](https://zhuanlan.zhihu.com/p/27907806)，里面讲了什么是“隐变量”与“条件独立性”。
 
 ## QA
 

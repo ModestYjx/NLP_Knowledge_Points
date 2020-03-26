@@ -2,6 +2,10 @@
 
 ## QA
 
+### 0. SVM了解吗？有什么优点？优化方法？
+
+
+
 ### 1. SVM 中的支持向量是什么意思？
 
 ![10.svm](C:/Users/Administrator/Desktop/笔记/NLPer-Interview-master/img/10.svm.png)
