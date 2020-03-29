@@ -18,17 +18,15 @@ $$
 L = - \sum_{j=1}^T y_j \, log \, s_j  \\
 $$
 
-
-
-
-
 ---
 
 ## QA
 
 ### 1. 为何一般选择 softmax 为多分类的输出层
 
-虽然能够将输出范围概率限制在 [0,1]之间的方法有很多，但 Softmax 的好处在于， 它使得输出两极化：正样本的结果趋近于 1， 负样本的结果趋近于 0。 可以说， Softmax 是 logistic 的一种泛化。
+虽然能够将输出范围概率限制在 [0,1]之间的方法有很多，但 Softmax 的好处在于， 它使得**输出两极化**：正样本的结果趋近于 1， 负样本的结果趋近于 0。 可以说， Softmax 是 logistic 的一种泛化。
+
+![](https://gss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/zhidao/wh%3D600%2C800/sign=857c395dcb95d143da23ec2543c0ae3a/9d82d158ccbf6c8147d1f9b6bf3eb13532fa408e.jpg)
 
 ## 2.softmax溢出
 

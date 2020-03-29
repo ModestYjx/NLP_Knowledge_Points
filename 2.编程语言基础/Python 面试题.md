@@ -12,6 +12,8 @@ tags: python
 
 [3] [2018年最常见的Python面试题&答案（上篇）](https://juejin.im/post/5b6bc1d16fb9a04f9c43edc3)：和[2]有重复
 
+[4] [Python 直接赋值、浅拷贝和深度拷贝解析](https://www.runoob.com/w3cnote/python-understanding-dict-copy-shallow-or-deep.html)
+
 ### 1. 垃圾回收机制
 
 **引用计数为主，分代收集为辅。**在 python 中，如果一个对象的引用数为 0， python 虚拟机就会回收这个对象的内存。

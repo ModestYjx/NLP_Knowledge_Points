@@ -1,3 +1,5 @@
+[toc]
+
 # Attention机制 --基础篇
 
 ## Hard vs Soft[1]
@@ -56,7 +58,7 @@ $$
 
 3.**加权求和得到注意力值**：通过注意力权重值对value进行加权求和，即$c_i$的计算。
 
-`总的来说，Attention无论怎么变化，总是万变不离其宗。对于大多数Attention文章来说，其变化为Value、Key、Query的定义，以及sorce函数的计算方法。`下面我们来详细讨论一下。
+总的来说，Attention无论怎么变化，总是万变不离其宗。对于大多数Attention文章来说，其变化为Value、Key、Query的定义，以及sorce函数的计算方法。下面我们来详细讨论一下。
 
 ## Score函数的选择[6]
 
@@ -70,7 +72,7 @@ $$
 $$
 score(Query, Key(j)) = \frac{Query \cdot Key(j)}{||Query|| \cdot ||Key(j)||}
 $$
-3.`MLP(Mlutilayer Perceptron)网络`，灵活
+3.MLP(Mlutilayer Perceptron)网络，灵活
 $$
 score(Query, Key(j)) = MLP(Query,  Key(j)) \\
 general: score(Query, Key(j)) = Query \, W \, Key(j) \\
@@ -94,15 +96,15 @@ Attention\, value=Attention(W_QX,W_KX,W_VX)
 $$
 其中，$Query=W_QX,Key=W_KX,Value=W_VX$
 
-`Self-Attention可以说的最火的Attention模型了，在BERT中起了重要的作用。`
+Self-Attention可以说的最火的Attention模型了，在BERT中起了重要的作用。
 
-`它的内部含义是对序列本身做Attention,来获得序列内部的联系，如下图所示[7]`
+它的内部含义是对序列本身做Attention,来获得序列内部的联系，如下图所示[7]
 
 ![](http://ww1.sinaimg.cn/large/006gOeiSly1g0u0j6zj7hg30go0er1kx.gif)
 
-`这其实类似于我们在Embedding层的时候采用LSTM来获取输入序列的上下文表示，但与LSTM不同的是，Self-Attention更能够把握句子中词与词的句法特征或语义特征，但是对于序列的位置信息不能很好地表示，这也是为什么Self-Attention需要一个Postition Embedding来对位置信息做一个补充，但对于一些位置信息比较敏感的任务，Position Embedding所带来的位置信息可能会不够。`
+这其实类似于我们在Embedding层的时候采用LSTM来获取输入序列的上下文表示，但与LSTM不同的是，Self-Attention更能够把握句子中词与词的句法特征或语义特征，但是对于序列的位置信息不能很好地表示，这也是为什么Self-Attention需要一个Postition Embedding来对位置信息做一个补充，但对于一些位置信息比较敏感的任务，Position Embedding所带来的位置信息可能会不够。
 
-`之所以说这篇文章具有开创意义，是因为其将Attention用到了一个基础单元上，为取代LSTM提供了一种可能。`
+之所以说这篇文章具有开创意义，是因为其将Attention用到了一个基础单元上，为取代LSTM提供了一种可能。
 
 ## 参考文献
 
