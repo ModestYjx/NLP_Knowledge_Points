@@ -14,6 +14,17 @@ tags: python
 
 [4] [Python 直接赋值、浅拷贝和深度拷贝解析](https://www.runoob.com/w3cnote/python-understanding-dict-copy-shallow-or-deep.html)
 
+
+
+python数据类型有哪些：
+
+有五个标准的数据类型：
+Numbers（数字）
+String（字符串）
+List（列表）
+Tuple（元组）
+Dictionary（字典）
+
 ### 1. 垃圾回收机制
 
 **引用计数为主，分代收集为辅。**在 python 中，如果一个对象的引用数为 0， python 虚拟机就会回收这个对象的内存。
